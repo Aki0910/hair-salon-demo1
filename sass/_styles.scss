@@ -1,0 +1,39 @@
+
+@use "foundation/index" as *;
+
+/* ---------------- header -------------------- */
+
+
+.styles {
+    margin: (160/1440)*100% auto 0;
+
+    @include mq('sp') {
+        margin: (80/375)*100% auto 0;
+        padding:0 (20/375)*100% ;
+    }
+}
+.styles__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: (64/1440)*100vw (80/1440)*100vw;
+    margin: (64/1440)*100% auto 0;
+    width: (1040/1440)*100vw;
+
+    @include mq('sp') {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: (20/375)*100vw (35/375)*100vw;
+        margin: (56/335)*100% 0 0;
+        width: 100%;
+
+    }
+} 
+.styles__item {
+    width: (200/1440)*100vw;
+
+    @include mq('sp') {
+        width: (150/375)*100vw;
+
+    }
+}

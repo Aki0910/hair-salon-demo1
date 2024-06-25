@@ -1,0 +1,53 @@
+@use "foundation/index" as *;
+
+
+/* ---------------- common -------------------- */
+html {
+    word-wrap: break-word;
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+dl,dt,dd {
+    font-weight: 400;
+}
+
+body {
+    color: $color-text;
+    font-family: $font-ja;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+img {
+    object-fit: cover;
+    height: auto;
+    width: 100%;
+}
+
+.title {
+    @extend %font-en;
+    font-size: clamp(4.0rem,(64/1440)*100vw,6.4rem);
+    letter-spacing: 0.04em;
+    line-height: 1;
+    text-align: center;
+}
+.subtitle {
+    font-size: clamp(2.0rem,(24/1440)*100vw,2.4rem);
+    margin: (24/1440)*100% auto 0;
+    text-align: center;
+
+    @include mq('sp') {
+        margin: (24/335)*100% auto 0;
+    }
+}
+.br {
+    word-break: keep-all;
+}

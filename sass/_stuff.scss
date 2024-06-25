@@ -1,0 +1,56 @@
+
+@use "foundation/index" as *;
+
+/* ---------------- header -------------------- */
+
+.stuff {
+    margin: (160/1440)*100% auto 0;
+
+    @include mq('sp') {
+        margin: (80/375)*100% auto 0;
+        padding:0 (20/375)*100% ;
+    }
+}
+.stuff__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: (56/1440)*100% auto 0;
+
+    @include mq('sp') {
+      display: block;
+      max-width: 60rem;
+    }
+}
+.stuff__wrap {
+    font-size: clamp(1.4rem,(16/1440)*100vw,1.6rem);
+    margin-left: (80/1440)*100%;
+    width: (512/1440)*100vw;
+
+    @include mq('sp') {
+        font-size: clamp(1.4rem,(14/375)*100vw,1.6rem);
+        margin:(40/335)*100% auto 0;
+        width: 100%;
+    }
+}
+.stuff__img {
+    width: (300/1440)*100vw;
+
+    @include mq('sp') {
+        margin: (56/335)*100% auto 0;
+        width: 100%;
+    }
+}
+.stuff__dataList {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.stuff__dataTitle {
+}
+.stuff__dataDescription {
+}
+.stuff__textBox {
+    margin-top: (56/512)*100%;
+    text-align: left;
+}

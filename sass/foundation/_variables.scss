@@ -1,0 +1,21 @@
+
+@font-face {
+    font-family: 'Times New Roman';
+    src: url('./fonts/times_new_roman.ttf') format('truetype');
+}
+
+
+$color-text: #333;
+$color-main: #fff;
+$color-accent: #B99B6B;
+
+
+$font-en: "Times New Roman", Times, serif;
+$font-ja: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+
+//欧州フォント使用
+%font-en {
+    font-family: $font-en;
+    font-style: italic;
+    font-weight: 700;
+}

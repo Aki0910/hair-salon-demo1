@@ -1,0 +1,61 @@
+@use "foundation/index" as *;
+
+/* ---------------- footer -------------------- */
+.footer {
+    background: $color-accent;
+    color: $color-main;
+    margin-top: (160/1440)*100%;
+
+    @include mq('sp') {
+        margin: (80/375)*100% auto 0;
+        padding: (20/375)*100% ;
+    }
+}
+.footer__inner {
+    margin: 0 auto;
+    padding: (20/1440)*100% 0;
+    width: (1280/1440)*100vw;
+
+    @include mq('sp') {
+        padding: 0;
+      width: 100%;
+    }
+}
+.footer__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    @include mq('sp') {
+      display: block;
+    }
+}
+.footer__logo {
+    width: 20rem;
+}
+.footer__list {
+    @extend %font-en;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: clamp(1.6rem,(24/1440)*100vw,2.4rem);
+
+    @include mq('sp') {
+        font-size: clamp(1.6rem,(16/375)*100vw,2.4rem);
+      margin-top: (40/335)*100%;
+    }
+}
+.footer__item {
+
+    &:not(:nth-of-type(1)) {
+        margin-left: (40/1440)*100vw;
+    }
+}
+.copyright {
+    text-align: center;
+    margin-top: (64/1280)*100%;
+
+    @include mq('sp') {
+        margin-top: (56/335)*100%;
+    }
+}
