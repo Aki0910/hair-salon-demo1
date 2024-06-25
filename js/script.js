@@ -39,3 +39,20 @@ window.addEventListener('scroll', function () {
     header.style.backgroundColor = "rgba(255, 255, 255, 1)"
   }
 });
+
+//fadein animation
+
+const target = document.querySelectorAll('#js-target')
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < target.length; i++){
+    const rect = target[i].getBoundingClientRect().top;
+    const scroll = window.scrollY || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; // 現在のブラウザの高さ
+    if (scroll > offset - windowHeight + 100) {
+      target[i].classList.add('js-fadeIn');
+    }else{
+      target[i].classList.remove('js-fadeIn');
+    }
+  }
+});
