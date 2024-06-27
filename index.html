@@ -1,361 +1,451 @@
 <!DOCTYPE html>
 <html lang="ja">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex , nofollow">
-    <title>hair salon demo1</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-
-    <header id="header" class="header">
-        <h1 class="header__logo"><a href="#"><img src="./img/logo-header.png" alt="logo"></a></h1>
-        <nav class="header__nav">
-            <ul class="header__list">
-                <li class="header__item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="header__item">
-                    <a href="#styles">styles</a>
-                </li>
-                <li class="header__item">
-                    <a href="#menu">Menu</a>
-                </li>
-                <li class="header__item">
-                    <a href="#reserve">Reserve</a>
-                </li>
-                <li class="header__item">
-                    <a href="#access">Access</a>
-                </li>
-            </ul>
-        </nav>
-
-    </header>
-    
-    <div class="drawer">
-        <div class="drawer__icon">
-            <span class="drawer__bar"></span>
-            <span class="drawer__bar"></span>
-            <span class="drawer__bar"></span>
-        </div>
-    
-        <nav class="drawer__nav">
-            <ul class="drawer__list">
-                <li class="drawer__item">
-                    <a href="#about">About</a>
-                </li>
-                <li class="drawer__item">
-                    <a href="#styles">styles</a>
-                </li>
-                <li class="drawer__item">
-                    <a href="#menu">Menu</a>
-                </li>
-                <li class="drawer__item">
-                    <a href="#reserve">Reserve</a>
-                </li>
-                <li class="drawer__item">
-                    <a href="#access">Access</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-
-
-    <section id="top" class="top">
-        <div class="top__img">
-            <img src="./img/top.jpg" alt="トップ画像">
-            <div class="top__textBox">
-                <p class="top__text">優しいケアと</p>
-                <p class="top__text">美しい仕上がりを</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="about">
-        <h2 id="js-target" class="title">About</h2>
-        <h3 class="subtitle">〜Salon de beauteについて〜</h3>
-        <div class="about__textBox">
-            <p class="about__text">Salon de beauteは、東京の下町にある美容室です。</p>
-            <p class="about__text">夫婦で営んでおり、地元のお客様に寄り添ったお店でありたいと思っています。</p>
-            <p class="about__text">お客様と生涯に渡ってお付き合いができる。そんな存在を目指して日々お客様と接しています。</p>
-        </div>
-    </section>
-
-    <section id="concept" class="concept">
-        <h2 id="js-target" class="title">Concept</h2>
-        <h3 class="subtitle">〜あなたのためのサロン〜</h3>
-        <ol class="concept__list">
-            <li class="concept__item">カウンセリングから仕上げまで担当者が変わりません。</li>
-            <li class="concept__item">お一人お一人の髪質や頭皮の状態にあったトリートメント・薬剤を処方いたします。</li>
-            <li class="concept__item">プライベートサロンのため、お子様連れでもご来店いただけます。</li>
-            <li class="concept__item">お時間やお日にちの都合が合わない場合、できる限り個別に対応させていただきます。</li>
-        </ol>
-    </section>
-
-    <section id="staff" class="staff">
-        <h2 id="js-target" class="title">Staff</h2>
-        <div class="staff__content">
-            <div class="staff__img">
-                <img src="./img/owner.jpg" alt="">
-            </div>
-            <div class="staff__wrap">
-                <dl class="staff__dataList">
-                    <dt class="staff__dataTitle">名前 : </dt>
-                    <dd class="staff__dataDescription">石井 奈美</dd>
-                </dl>
-                <dl class="staff__dataList">
-                    <dt class="staff__dataTitle">生年月日 : </dt>
-                    <dd class="staff__dataDescription">1989年11月22日</dd>
-                </dl>
-                <dl class="staff__dataList">
-                    <dt class="staff__dataTitle">出身地 : </dt>
-                    <dd class="staff__dataDescription">東京都葛飾区</dd>
-                </dl>
-                <dl class="staff__dataList">
-                    <dt class="staff__dataTitle">血液型 : </dt>
-                    <dd class="staff__dataDescription">B型</dd>
-                </dl>
-                <dl class="staff__dataList">
-                    <dt class="staff__dataTitle">趣味 : </dt>
-                    <dd class="staff__dataDescription">映画鑑賞 / 読書</dd>
-                </dl>
-                <div class="staff__textBox">
-                    <p>愛着のある地元で美容室ができることを大変嬉しく思っております。</p>
-                    <p>お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、</p>
-                    <p>日々精進して参りますので、よろしくお願いします！</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="styles" class="styles">
-        <h2 id="js-target" class="title">Styles</h2>
-        <ul class="styles__list">
-            <li id="js-target" class="styles__item">
-                <img src="./img/style01.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style02.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style03.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style04.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style05.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style06.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style07.png" alt="イメージモデル">
-            </li>
-            <li id="js-target" class="styles__item">
-                <img src="./img/style08.png" alt="イメージモデル">
-            </li>
-        </ul>
-
-    </section>
-
-    <section id="menu" class="menu">
-        <div class="menu__inner">
-
-            <h2 id="js-target" class="title">Menu</h2>
-            <ul class="menu__content">
-                <li class="menu__left">
-                    <ul class="menu__list">
-                        <li class="menu__item">cut
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">カット＆シャンプー</dt>
-                                <dd class="menu__dataDescription">¥4,100</dd>
-                            </dl>
-                        </li>
-                        <li class="menu__item">color
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸リタッチカラー</dt>
-                                <dd class="menu__dataDescription">¥8,500</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸ワンメイクカラー</dt>
-                                <dd class="menu__dataDescription">¥9,500</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸入りWカラー</dt>
-                                <dd class="menu__dataDescription">¥15,000</dd>
-                            </dl>
-                        </li>
-                        <li class="menu__item">straighting
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸入り縮毛矯正</dt>
-                                <dd class="menu__dataDescription">¥12,000</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸入りポイント矯正</dt>
-                                <dd class="menu__dataDescription">¥4,250～</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu__right">
-                    <ul class="menu__list">
-                        <li class="menu__item">perm
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸スピデジパーマ</dt>
-                                <dd class="menu__dataDescription">¥14,000</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">メンズデザインパーマ</dt>
-                                <dd class="menu__dataDescription">¥9,800</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸入りコスメパーマ</dt>
-                                <dd class="menu__dataDescription">¥12,000</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">高濃度フルボ酸入りポイントパーマ</dt>
-                                <dd class="menu__dataDescription">¥8,000</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">ニュアンスストレート</dt>
-                                <dd class="menu__dataDescription">¥12,800</dd>
-                            </dl>
-                        </li>
-                        <li class="menu__item">other
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">シャンプー＆ブロー</dt>
-                                <dd class="menu__dataDescription">¥2,700</dd>
-                            </dl>
-                            <dl class="menu__dataList">
-                                <dt class="menu__dataTitle">完熟トリートメントヘッドスパ</dt>
-                                <dd class="menu__dataDescription">¥3,800</dd>
-                            </dl>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="menu__pay">
-                <p class="menu__info">各種カードでもお支払いいただけます。</p>
-                <ul class="menu__cardList">
-                    <li class="menu__cardIcon">
-                        <img src="./img/visa.png" alt="visa-card">
-                    </li>
-                    <li class="menu__cardIcon">
-                        <img src="./img/mastercard.png" alt="master-card">
-                    </li>
-                    <li class="menu__cardIcon">
-                        <img src="./img/jcb.png" alt="jcb-card">
-                    </li>
-                    <li class="menu__cardIcon">
-                        <img src="./img/american-express.png" alt="american-express-card">
-                    </li>
-                </ul>
-            </div>
-
-            <div class="menu__component">
-                <h3 class="subtitle">〜高濃度フルボ酸とは？〜</h3>
-                <div class="menu__component--content">
-                    <div class="menu__component--img">
-                        <img src="./img/component.png" alt="component">
-                    </div>
-                    <p class="menu__component--description">
-                        フルボ酸とは土壌の中に存在する有機酸の１つで、自然界の中では植物にミネラルを補給する機能があります。人に対しては、美容や健康に対して効果があると期待されている成分です。Salon de beauteでは美容成分であるフルボ酸を高濃度で配合した製品を使用しています。
-                    </p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section id="reserve" class="reserve">
-        <div class="reserve__inner">
-            <h2 id="js-target" class="title">Reserve</h2>
-            <p class="reserve__info">ご予約はお電話またはhotpepper beautyから承っております。</p>
-            <div class="reserve__button">
-                <div class="reserve__til">
-                    <a href="tel:03-0000-0000">03-0000-0000</a>
-                </div>
-                <div class="reserve__hotpepper">
-                    <a href="#">hotpepperを見る</a>
-                </div>
-            </div>
-            <div class="reserve__content">
-                <dl class="reserve__dataList">
-                    <dt class="reserve__dataTitle">Open</dt>
-                    <dl class="reserve__dataDescription">水木金 10:00〜22:00</dl>
-                    <dl class="reserve__dataDescription">（最終受付：パーマ・カラー18:00/カット19:00）</dl>
-                    <dl class="reserve__dataDescription">土日月 10:00〜20:00</dl>
-                    <dl class="reserve__dataDescription">（最終受付：パーマ・カラー18:00/カット19:00）</dl>
-                </dl>
-                <dl class="reserve__dataList">
-                    <dt class="reserve__dataTitle">Close</dt>
-                    <dl class="reserve__dataDescription">月曜日・不定休</dl>
-                    <dl class="reserve__dataDescription">（不定休についてはBlogでお知らせします）</dl>
-                </dl>
-            </div>
-        </div>
-    </section>
-
-    <section id="access" class="access">
-        <div id="js-target" class="title">Access</div>
-        <div class="access__content">
-            <div class="access__iframe">
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51888.823445846385!2d134.7668187895937!3d35.626457736353　　　　　　98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fffc83b9ff03cbf%3A0xc56bd6efca8999ee!2sKinosaki%20Onsen%2C%20Toyooka%2C%20Hyogo!5e0!3m2!1sen!2sjp!4v1699412968766!5m2!1sen!2sjp"
-                width="800"
-                height="600"
-                style="border:0;"
-                allowfullscreen=""
-                loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
-              ></iframe>
-            </div>
-            <div class="access__details">
-                <dl class="access__dataList">
-                    <dt class="access__dataTitle">Tel</dt>
-                    <dl class="access__dataDescription">030-000-0000</dl>
-                </dl>
-                <dl class="access__dataList">
-                    <dt class="access__dataTitle">Address</dt>
-                    <dl class="access__dataDescription">〒120-0000</dl>
-                    <dl class="access__dataDescription">東京都葛飾区〇〇 ×-×-× ◯◯ビル1F</dl>
-                </dl>
-            </div>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer__inner">
-            <nav class="footer__nav">
-                <div class="footer__logo">
-                    <img src="./img/logo-footer.png" alt="logo">
-                </div>
-                <ul class="footer__list">
-                    <li class="footer__item">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots" content="noindex , nofollow" />
+        <title>hair salon demo1</title>
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <header id="header" class="header">
+            <h1 class="header__logo">
+                <a href="#"><img src="./img/logo-header.png" alt="logo" /></a>
+            </h1>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
                         <a href="#about">About</a>
                     </li>
-                    <li class="footer__item">
-                        <a href="#styles">Styles</a>
+                    <li class="header__item">
+                        <a href="#styles">styles</a>
                     </li>
-                    <li class="footer__item">
+                    <li class="header__item">
                         <a href="#menu">Menu</a>
                     </li>
-                    <li class="footer__item">
+                    <li class="header__item">
                         <a href="#reserve">Reserve</a>
                     </li>
-                    <li class="footer__item">
+                    <li class="header__item">
                         <a href="#access">Access</a>
                     </li>
                 </ul>
             </nav>
-            <div class="copyright"><small>&copy;コピーライト</small></div>
+        </header>
+
+        <div class="drawer">
+            <div class="drawer__icon">
+                <span class="drawer__bar"></span>
+                <span class="drawer__bar"></span>
+                <span class="drawer__bar"></span>
+            </div>
+
+            <nav class="drawer__nav">
+                <ul class="drawer__list">
+                    <li class="drawer__item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="drawer__item">
+                        <a href="#styles">styles</a>
+                    </li>
+                    <li class="drawer__item">
+                        <a href="#menu">Menu</a>
+                    </li>
+                    <li class="drawer__item">
+                        <a href="#reserve">Reserve</a>
+                    </li>
+                    <li class="drawer__item">
+                        <a href="#access">Access</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </footer>
 
+        <section id="top" class="top">
+            <div class="top__img">
+                <img src="./img/top.jpg" alt="トップ画像" />
+                <div class="top__textBox">
+                    <p class="top__text">優しいケアと</p>
+                    <p class="top__text">美しい仕上がりを</p>
+                </div>
+            </div>
+        </section>
 
-    <script src="./js/script.js"></script>
-</body>
+        <section id="about" class="about">
+            <h2 id="js-target" class="title">About</h2>
+            <h3 class="subtitle">〜Salon de beauteについて〜</h3>
+            <div class="about__textBox">
+                <p class="about__text">
+                    Salon de beauteは、東京の下町にある美容室です。
+                </p>
+                <p class="about__text">
+                    夫婦で営んでおり、地元のお客様に寄り添ったお店でありたいと思っています。
+                </p>
+                <p class="about__text">
+                    お客様と生涯に渡ってお付き合いができる。そんな存在を目指して日々お客様と接しています。
+                </p>
+            </div>
+        </section>
+
+        <section id="concept" class="concept">
+            <h2 id="js-target" class="title">Concept</h2>
+            <h3 class="subtitle">〜あなたのためのサロン〜</h3>
+            <ol class="concept__list">
+                <li class="concept__item">
+                    カウンセリングから仕上げまで担当者が変わりません。
+                </li>
+                <li class="concept__item">
+                    お一人お一人の髪質や頭皮の状態にあったトリートメント・薬剤を処方いたします。
+                </li>
+                <li class="concept__item">
+                    プライベートサロンのため、お子様連れでもご来店いただけます。
+                </li>
+                <li class="concept__item">
+                    お時間やお日にちの都合が合わない場合、できる限り個別に対応させていただきます。
+                </li>
+            </ol>
+        </section>
+
+        <section id="staff" class="staff">
+            <h2 id="js-target" class="title">Staff</h2>
+            <div class="staff__content">
+                <div class="staff__img">
+                    <img src="./img/owner.jpg" alt="" />
+                </div>
+                <div class="staff__wrap">
+                    <dl class="staff__dataList">
+                        <dt class="staff__dataTitle">名前 :</dt>
+                        <dd class="staff__dataDescription">石井 奈美</dd>
+                    </dl>
+                    <dl class="staff__dataList">
+                        <dt class="staff__dataTitle">生年月日 :</dt>
+                        <dd class="staff__dataDescription">1989年11月22日</dd>
+                    </dl>
+                    <dl class="staff__dataList">
+                        <dt class="staff__dataTitle">出身地 :</dt>
+                        <dd class="staff__dataDescription">東京都葛飾区</dd>
+                    </dl>
+                    <dl class="staff__dataList">
+                        <dt class="staff__dataTitle">血液型 :</dt>
+                        <dd class="staff__dataDescription">B型</dd>
+                    </dl>
+                    <dl class="staff__dataList">
+                        <dt class="staff__dataTitle">趣味 :</dt>
+                        <dd class="staff__dataDescription">映画鑑賞 / 読書</dd>
+                    </dl>
+                    <div class="staff__textBox">
+                        <p>
+                            愛着のある地元で美容室ができることを大変嬉しく思っております。
+                        </p>
+                        <p>
+                            お一人お一人のお客さまに寄り添い、末長いお付き合いができるよう、
+                        </p>
+                        <p>日々精進して参りますので、よろしくお願いします！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="styles" class="styles">
+            <h2 id="js-target" class="title">Styles</h2>
+            <ul class="styles__list">
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style01.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style02.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style03.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style04.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style05.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style06.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style07.png" alt="イメージモデル" />
+                </li>
+                <li id="js-target" class="styles__item">
+                    <img src="./img/style08.png" alt="イメージモデル" />
+                </li>
+            </ul>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="menu__inner">
+                <h2 id="js-target" class="title">Menu</h2>
+                <ul class="menu__content">
+                    <li class="menu__left">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                cut
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        カット＆シャンプー
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥4,100
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="menu__item">
+                                color
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸リタッチカラー
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥8,500
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸ワンメイクカラー
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥9,500
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸入りWカラー
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥15,000
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="menu__item">
+                                straighting
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸入り縮毛矯正
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥12,000
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸入りポイント矯正
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥4,250～
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__right">
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                perm
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸スピデジパーマ
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥14,000
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        メンズデザインパーマ
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥9,800
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸入りコスメパーマ
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥12,000
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        高濃度フルボ酸入りポイントパーマ
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥8,000
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        ニュアンスストレート
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥12,800
+                                    </dd>
+                                </dl>
+                            </li>
+                            <li class="menu__item">
+                                other
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        シャンプー＆ブロー
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥2,700
+                                    </dd>
+                                </dl>
+                                <dl class="menu__dataList">
+                                    <dt class="menu__dataTitle">
+                                        完熟トリートメントヘッドスパ
+                                    </dt>
+                                    <dd class="menu__dataDescription">
+                                        ¥3,800
+                                    </dd>
+                                </dl>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="menu__pay">
+                    <p class="menu__info">
+                        各種カードでもお支払いいただけます。
+                    </p>
+                    <ul class="menu__cardList">
+                        <li class="menu__cardIcon">
+                            <img src="./img/visa.png" alt="visa-card" />
+                        </li>
+                        <li class="menu__cardIcon">
+                            <img src="./img/mastercard.png" alt="master-card" />
+                        </li>
+                        <li class="menu__cardIcon">
+                            <img src="./img/jcb.png" alt="jcb-card" />
+                        </li>
+                        <li class="menu__cardIcon">
+                            <img
+                                src="./img/american-express.png"
+                                alt="american-express-card"
+                            />
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu__component">
+                    <h3 class="subtitle">〜高濃度フルボ酸とは？〜</h3>
+                    <div class="menu__component--content">
+                        <div class="menu__component--img">
+                            <img src="./img/component.png" alt="component" />
+                        </div>
+                        <p class="menu__component--description">
+                            フルボ酸とは土壌の中に存在する有機酸の１つで、自然界の中では植物にミネラルを補給する機能があります。人に対しては、美容や健康に対して効果があると期待されている成分です。Salon
+                            de
+                            beauteでは美容成分であるフルボ酸を高濃度で配合した製品を使用しています。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="reserve" class="reserve">
+            <div class="reserve__inner">
+                <h2 id="js-target" class="title">Reserve</h2>
+                <p class="reserve__info">
+                    ご予約はお電話またはhotpepper beautyから承っております。
+                </p>
+                <div class="reserve__button">
+                    <div class="reserve__til">
+                        <a href="tel:03-0000-0000">03-0000-0000</a>
+                    </div>
+                    <div class="reserve__hotpepper">
+                        <a href="#">hotpepperを見る</a>
+                    </div>
+                </div>
+                <div class="reserve__content">
+                    <dl class="reserve__dataList">
+                        <dt class="reserve__dataTitle">Open</dt>
+                        <dl class="reserve__dataDescription">
+                            水木金 10:00〜22:00
+                        </dl>
+                        <dl class="reserve__dataDescription">
+                            （最終受付：パーマ・カラー18:00/カット19:00）
+                        </dl>
+                        <dl class="reserve__dataDescription">
+                            土日月 10:00〜20:00
+                        </dl>
+                        <dl class="reserve__dataDescription">
+                            （最終受付：パーマ・カラー18:00/カット19:00）
+                        </dl>
+                    </dl>
+                    <dl class="reserve__dataList">
+                        <dt class="reserve__dataTitle">Close</dt>
+                        <dl class="reserve__dataDescription">月曜日・不定休</dl>
+                        <dl class="reserve__dataDescription">
+                            （不定休についてはBlogでお知らせします）
+                        </dl>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <section id="access" class="access">
+            <div id="js-target" class="title">Access</div>
+            <div class="access__content">
+                <div class="access__iframe">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d51888.823445846385!2d134.7668187895937!3d35.626457736353　　　　　　98!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5fffc83b9ff03cbf%3A0xc56bd6efca8999ee!2sKinosaki%20Onsen%2C%20Toyooka%2C%20Hyogo!5e0!3m2!1sen!2sjp!4v1699412968766!5m2!1sen!2sjp"
+                        width="800"
+                        height="600"
+                        style="border: 0"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                    ></iframe>
+                </div>
+                <div class="access__details">
+                    <dl class="access__dataList">
+                        <dt class="access__dataTitle">Tel</dt>
+                        <dl class="access__dataDescription">030-000-0000</dl>
+                    </dl>
+                    <dl class="access__dataList">
+                        <dt class="access__dataTitle">Address</dt>
+                        <dl class="access__dataDescription">〒120-0000</dl>
+                        <dl class="access__dataDescription">
+                            東京都葛飾区〇〇 ×-×-× ◯◯ビル1F
+                        </dl>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__inner">
+                <nav class="footer__nav">
+                    <div class="footer__logo">
+                        <img src="./img/logo-footer.png" alt="logo" />
+                    </div>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#about">About</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#styles">Styles</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#menu">Menu</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#reserve">Reserve</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#access">Access</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="copyright"><small>&copy;コピーライト</small></div>
+            </div>
+        </footer>
+
+        <script src="./js/script.js"></script>
+    </body>
 </html>

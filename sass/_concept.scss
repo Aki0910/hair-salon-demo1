@@ -1,37 +1,35 @@
-
-@use "foundation/index" as *;
+@use 'foundation/index' as *;
 
 /* ---------------- header -------------------- */
 
-
 .concept {
-    margin: (160/1440)*100% auto 0;
+    margin: (160/1440) * 100% auto 0;
 
     @include mq('sp') {
-        margin: (80/375)*100% auto 0;
-        padding:0 (20/375)*100% ;
+        margin: (80/375) * 100% auto 0;
+        padding: 0 (20/375) * 100%;
     }
 }
 .concept__list {
-    font-size: clamp(1.6rem,(24/1440)*100vw,2.0rem);
-    margin: (64/1440)*100% auto 0;
+    font-size: clamp(1.6rem, (24/1440) * 100vw, 2rem);
+    margin: (64/1440) * 100% auto 0;
     letter-spacing: 0.04em;
     text-align: left;
-    width: (870/1440)*100vw;
+    width: (870/1440) * 100vw;
 
     @include mq('sp') {
-        margin: (56/335)*100% 0 0;
+        margin: (56/335) * 100% 0 0;
         width: 100%;
     }
 }
 .concept__item {
     line-height: 2;
-    padding-left: 4.0rem;
+    padding-left: 4rem;
     position: relative;
 
     @include mq('sp') {
         line-height: 1.5;
-        padding-left: (40/335)*100%;
+        padding-left: (40/335) * 100%;
     }
 
     &::before {
@@ -40,43 +38,41 @@
         left: 0;
         color: $color-accent;
         @extend %font-en;
-        font-size: clamp(2.8rem,(32/1440)*100vw,3.2rem);
+        font-size: clamp(2.8rem, (32/1440) * 100vw, 3.2rem);
         line-height: 1;
 
-
         @include mq('sp') {
-          top: 0;
-          transform: translateY(0);
+            top: 0;
+            transform: translateY(0);
         }
     }
 
     &:nth-of-type(1) {
         &::before {
-            content: "1";
+            content: '1';
         }
     }
     &:nth-of-type(2) {
         &::before {
-            content: "2";
+            content: '2';
         }
     }
     &:nth-of-type(3) {
         &::before {
-            content: "3";
+            content: '3';
         }
     }
     &:nth-of-type(4) {
         &::before {
-            content: "4";
+            content: '4';
         }
     }
 
     &:not(:nth-child(1)) {
-        margin-top: (48/1440)*100%;
+        margin-top: (48/1440) * 100%;
 
         @include mq('sp') {
-            margin-top: (24/335)*100%;
+            margin-top: (24/335) * 100%;
         }
     }
 }
-

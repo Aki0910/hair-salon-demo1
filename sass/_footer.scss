@@ -1,24 +1,24 @@
-@use "foundation/index" as *;
+@use 'foundation/index' as *;
 
 /* ---------------- footer -------------------- */
 .footer {
     background: $color-accent;
     color: $color-main;
-    margin-top: (160/1440)*100%;
+    margin-top: (160/1440) * 100%;
 
     @include mq('sp') {
-        margin: (80/375)*100% auto 0;
-        padding: (20/375)*100% ;
+        margin: (80/375) * 100% auto 0;
+        padding: (20/375) * 100%;
     }
 }
 .footer__inner {
     margin: 0 auto;
-    padding: (20/1440)*100% 0;
-    width: (1280/1440)*100vw;
+    padding: (20/1440) * 100% 0;
+    width: (1280/1440) * 100vw;
 
     @include mq('sp') {
         padding: 0;
-      width: 100%;
+        width: 100%;
     }
 }
 .footer__nav {
@@ -27,7 +27,7 @@
     justify-content: space-between;
 
     @include mq('sp') {
-      display: block;
+        display: block;
     }
 }
 .footer__logo {
@@ -38,24 +38,23 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    font-size: clamp(1.6rem,(24/1440)*100vw,2.4rem);
+    font-size: clamp(1.6rem, (24/1440) * 100vw, 2.4rem);
 
     @include mq('sp') {
-        font-size: clamp(1.6rem,(16/375)*100vw,2.4rem);
-      margin-top: (40/335)*100%;
+        font-size: clamp(1.6rem, (16/375) * 100vw, 2.4rem);
+        margin-top: (40/335) * 100%;
     }
 }
 .footer__item {
-
     &:not(:nth-of-type(1)) {
-        margin-left: (40/1440)*100vw;
+        margin-left: (40/1440) * 100vw;
     }
 }
 .copyright {
     text-align: center;
-    margin-top: (64/1280)*100%;
+    margin-top: (64/1280) * 100%;
 
     @include mq('sp') {
-        margin-top: (56/335)*100%;
+        margin-top: (56/335) * 100%;
     }
 }

@@ -1,25 +1,24 @@
-
-@use "foundation/index" as *;
+@use 'foundation/index' as *;
 
 /* ---------------- header -------------------- */
 
 .about {
-    margin: (160/1440)*100% auto 0;
+    margin: (160/1440) * 100% auto 0;
     text-align: center;
 
     @include mq('sp') {
-        margin: (80/375)*100% auto 0;
-        padding:0 (20/375)*100% ;
+        margin: (80/375) * 100% auto 0;
+        padding: 0 (20/375) * 100%;
     }
 }
 
 .about__textBox {
-    margin: (64/1440)*100% auto 0;
+    margin: (64/1440) * 100% auto 0;
 
     @include mq('sp') {
-        margin: (40/335)*100% auto 0;
+        margin: (40/335) * 100% auto 0;
     }
 }
 .about__text {
-    font-size: clamp(1.4rem,(20/1440)*100vw,2.0rem);
+    font-size: clamp(1.4rem, (20/1440) * 100vw, 2rem);
 }
