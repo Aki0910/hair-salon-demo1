@@ -1,5 +1,4 @@
-
-@use "foundation/index" as *;
+@use 'foundation/index' as *;
 
 /* ---------------- header -------------------- */
 
@@ -9,7 +8,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    padding: (32/1440)*100% (80/1440)*100%;
+    padding: (32/1440) * 100% (80/1440) * 100%;
 
     @include mq('sp') {
         height: 8rem;
@@ -22,9 +21,8 @@
     width: 20rem;
 }
 .header__nav {
-    
     @include mq('sp') {
-      display: none;
+        display: none;
     }
 }
 .header__list {
@@ -33,6 +31,6 @@
     justify-content: space-between;
 }
 .header__item {
-    font-size: clamp(1.6rem,(24/1440)*100vw,2.4rem);
-    margin-left: (40/1440)*100vw;
+    font-size: clamp(1.6rem, (24/1440) * 100vw, 2.4rem);
+    margin-left: (40/1440) * 100vw;
 }

@@ -1,5 +1,4 @@
-@use "foundation/index" as *;
-
+@use 'foundation/index' as *;
 
 /* ---------------- common -------------------- */
 html {
@@ -8,7 +7,9 @@ html {
     margin: 0;
     padding: 0;
 }
-dl,dt,dd {
+dl,
+dt,
+dd {
     font-weight: 400;
 }
 
@@ -34,18 +35,18 @@ img {
 
 .title {
     @extend %font-en;
-    font-size: clamp(4.0rem,(64/1440)*100vw,6.4rem);
+    font-size: clamp(4rem, (64/1440) * 100vw, 6.4rem);
     letter-spacing: 0.04em;
     line-height: 1;
     text-align: center;
 }
 .subtitle {
-    font-size: clamp(2.0rem,(24/1440)*100vw,2.4rem);
-    margin: (24/1440)*100% auto 0;
+    font-size: clamp(2rem, (24/1440) * 100vw, 2.4rem);
+    margin: (24/1440) * 100% auto 0;
     text-align: center;
 
     @include mq('sp') {
-        margin: (24/335)*100% auto 0;
+        margin: (24/335) * 100% auto 0;
     }
 }
 .br {
