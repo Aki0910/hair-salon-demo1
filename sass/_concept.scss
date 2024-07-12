@@ -11,10 +11,11 @@
     }
 }
 .concept__list {
-    font-size: clamp(1.6rem, (24/1440) * 100vw, 2rem);
+    font-size: clamp(1.6rem, (20/1440) * 100vw, 2rem);
     margin: (64/1440) * 100% auto 0;
     letter-spacing: 0.04em;
     text-align: left;
+    max-width: 870px;
     width: (870/1440) * 100vw;
 
     @include mq('sp') {

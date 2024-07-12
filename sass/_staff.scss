@@ -24,6 +24,7 @@
 .staff__wrap {
     font-size: clamp(1.4rem, (16/1440) * 100vw, 1.6rem);
     margin-left: (80/1440) * 100%;
+    max-width: 512px;
     width: (512/1440) * 100vw;
 
     @include mq('sp') {
